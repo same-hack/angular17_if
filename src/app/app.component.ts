@@ -7,8 +7,18 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'angular17_if';
+
+  counter: number = 0;
+
+  countUp() {
+    this.counter++;
+  }
+
+  countDown() {
+    this.counter--;
+  }
 }
