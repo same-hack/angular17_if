@@ -10,14 +10,15 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'angular17_if';
-
+  // カウンター変数を宣言し、0で初期化
   counter: number = 0;
 
+  // カウントを増やすメソッド
   countUp() {
     this.counter++;
   }
 
+  // カウントを減らすメソッド
   countDown() {
     this.counter--;
   }
